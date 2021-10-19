@@ -14,31 +14,34 @@ if __name__ == '__main__':
     main()
 ```
 
-Diseña e implementa un programa que recibe números positivos para conformar una lista, la despliega a pantalla y posteriormente procesa esa lista y construye dos más, donde en la primera están los números mútiplos de n y en otra lista donde están los que no son múltiplos de n. Para lo anterior DEBES CREAR las siguientes funciones en tu programa:
+Escribe un programa que genere una lista de numeros de tamaño par, con los datos que ingrese el usuario y posteriormente divide la lista en partes iguales pero de manera intercalada, es decir, el primer dato de la lista se va a la primera lista y el segundo a la segunda y así sucesivamente hasta terminar de repartir los datos. Para lo anterios deberás crear las siguientes funciones.
 
-Función **crea_lista** la cual no tiene parámetros y cuya funcionalidad es recibir números del usuario y va creando una lista con ellos. El mensaje para pedirlas será: **">>>  "** El proceso de recepción de números termina cuando el usuario ingresa un número negativo. La función deberá regresar la lista creada como resultado de la función.
+Función **crea_lista** la cual recibe como parámetro un entero positivo n y cuya funcionalidad es recibir los n números del usuario y va creando una lista con ellos. El mensaje para pedirlos será: **">>>  "** La función deberá regresar la lista creada como resultado de la función.
 
-Función **divide_lista** la cual recibe como parámetro una lista y un número n, la función crea una lista anidada con dos listas internas, donde la primera tiene los números que son múltiplos de n y en la segunda los que no son múltiplos de n. La función regresa la lista anidada.
+Función **divide_lista** la cual recibe como parámetro una lista de tamaño par, la función crea una lista anidada con dos listas internas, dividiendo la lista recibida como parámetro en partes iguales pero de manera intercalada, es decir, el primer dato de la lista se va a la primera lista y el segundo a la segunda y así sucesivamente hasta terminar de repartir los datos. La función regresa la lista anidada creada.
 
-En el **main**, se debe desplegar el mensaje **"Ingresa números positivos, para terminar de capturar ingresa un negativo"**, luego se ingresan los datos para la lista (llama a la función correspondiente) y despliega la lista, posteriormente, pide el número del cuál quieres identificar múltiplos con este mensaje: **"Múltiplos de: "** y luego llama a la función correspondiente para que divida la lista de acuerdo a los que son múltiplos de ese número n y los que no. Por último despliega las dos listas, una en cada renglón, primero la de múltiplos de n y luego de la lista de los que no son múltiplos. Nota: El número para determinar si son múltiplos deberá ser mayor que cero, de lo contrario, deberá desplegar el mensaje "Error" y termina el programa.
+En el **main**, se debe desplegar el mensaje **"Ingresa el tamaño de la lista, debe ser par: "**, si el número recibido es par, se ingresan los datos para la lista (llama a la función correspondiente que ya hace esto) y despliega la lista, posteriormente, llama a la función correspondiente que divide la lista en dos, generando la matriz con dos listas internas, despliega las dos listas internas, una en cada renglón. Si el tamaño recibido para los elementos de la lista no es positivo y par, deberá desplegar el mensaje **"Error"** y termina el programa.
 
 ## Ejemplo de ejecución del programa
 ```
-Ingresa números positivos, para terminar de capturar ingresa un negativo
+Ingresa el tamaño de la lista, debe ser par: 8
 >>> 5
 >>> 8
 >>> 21
 >>> 20
 >>> 36
 >>> 100
->>> -1
-[5, 8, 21, 20, 36, 100]
-Múltiplos de: s
-[5, 20, 100]       
-[8, 21, 36]
+>>> 1
+>>> 2
+[5, 8, 21, 20, 36, 100, 1, 2]
+[5, 21, 36, 1]
+[8, 20, 100, 2]
 ```
-.
-
+## Otro ejemplo
+```
+Ingresa el tamaño de la lista, debe ser par: 3
+Error
+```
 
 **Nota:** No cambies ni quites el código `if __name__ == '__main__':` 
 

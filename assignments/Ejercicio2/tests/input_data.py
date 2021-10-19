@@ -4,8 +4,8 @@
 input_values = [
     # Test case 1
     (
-    ["3"],
-    [">>> ", "[0, 1, 0]","[0, 1, 0]","[0, 1, 0]"],
+    ["4"],
+    [">>> ", "# = = #","# = = #","# = = #","# = = #"],
     ["La salida no cumple con el caso de prueba"]
     ),
     # Test case 2
